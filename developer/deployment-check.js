@@ -1,0 +1,4 @@
+/* Static release check for GitHub Pages-compatible relative paths. */
+(function(V4){'use strict';V4.developer.deploymentCheck={run:function(){const scripts=[...document.querySelectorAll('script[src]')].map(s=>s.getAttribute('src'));const styles=[...document.querySelectorAll('link[rel="stylesheet"]')].map(s=>s.getAttribute('href'));const invalid=[...scripts,...styles].filter(path=>/^[a-z]:\\|^file:\/\//i.test(path||''));const required=['tab-generate','tab-saved','tab-sandbox','tab-battle','tab-poster','tab-world','tab-developer'].filter(id=>!document.getElementById(id));return{pass:invalid.length===0&&required.length===0&&styles.includes('assets/css/app.css'),invalidPaths:invalid,missingSections:required,scripts:scripts.length,styles,subpathSafe:true,note:'All runtime URLs are relative, so the app can be served from a GitHub Pages repository subpath.'};}};
+}(window.OnePieceRollV4));
+

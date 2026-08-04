@@ -1,0 +1,2 @@
+(function (V4) { 'use strict'; const resolver=V4.engines.encounterResolver=V4.engines.encounterResolver||{}; resolver.available=(character,{sea='grand-line',source='any'}={})=>(V4.database.encounters||[]).filter(entry=>(source==='any'||entry.source===source)&&entry.sea.includes(sea)&&(character.combatRating||0)>=entry.minCombat&&(character.combatRating||0)<=entry.maxCombat&&(!entry.minMarineHeat||(V4.engines.livingWorld.ensure(character).marineHeat>=entry.minMarineHeat))); }(window.OnePieceRollV4));
+

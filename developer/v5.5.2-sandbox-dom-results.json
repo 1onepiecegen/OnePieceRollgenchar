@@ -1,0 +1,8 @@
+{
+  "stages": 8,
+  "stageNames": ["Identity", "Personality & traits", "Life & origin", "Power source", "Combat training", "Haki & attributes", "World presence", "Review & create"],
+  "sourceImplementation": "ui/v552-sandbox-flow.js",
+  "persistence": "native form state is retained while navigation hides inactive stage fields",
+  "validation": "name, Sandbox enabled state, and invalid fruit-awakening pairing block progression",
+  "browserVerification": "pending: local file browser navigation blocked in this environment"
+}

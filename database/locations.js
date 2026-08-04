@@ -1,0 +1,7 @@
+(function (V4) { 'use strict'; V4.database.locations = [
+  {id:'shells-town',name:'Shells Town',source:'canon',spoilerEra:'late-wano',sea:'east-blue',locationType:'town',factionIds:['marines'],characterEncounterIds:['roronoa-zoro','smoker'],organizationEncounterIds:['marines'],availableTrainingTags:['swordsmanship','marine-drill'],availableFruitEventTags:['black-market'],dangerBand:'east-blue'},
+  {id:'water-7',name:'Water 7',source:'canon',spoilerEra:'late-wano',sea:'grand-line',locationType:'island',factionIds:[],characterEncounterIds:['nami','usopp'],organizationEncounterIds:[],availableTrainingTags:['shipwright','navigation'],availableFruitEventTags:['market'],dangerBand:'grand-line'},
+  {id:'sabaody-archipelago',name:'Sabaody Archipelago',source:'canon',spoilerEra:'late-wano',sea:'grand-line',locationType:'archipelago',factionIds:['marines','world-government'],characterEncounterIds:['trafalgar-law'],organizationEncounterIds:['marines'],availableTrainingTags:[],availableFruitEventTags:['auction'],dangerBand:'grand-line'},
+  {id:'wano-country',name:'Wano Country',source:'canon',spoilerEra:'late-wano',sea:'new-world',locationType:'country',factionIds:[],characterEncounterIds:['roronoa-zoro','sanji','monkey-d-luffy'],organizationEncounterIds:['straw-hat-pirates'],availableTrainingTags:['swordsmanship','armament-haki'],availableFruitEventTags:[],dangerBand:'new-world'}
+]; }(window.OnePieceRollV4));
+

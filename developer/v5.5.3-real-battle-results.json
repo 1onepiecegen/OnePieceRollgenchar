@@ -1,0 +1,16 @@
+{
+  "buildId": "v5.5.3-runtime-integration-20260804",
+  "test": "runV552BattleIntegrationTest",
+  "fixture": "Luffy vs Rob Lucci through the ordinary Battle Match renderer",
+  "status": "Integrated into runtime; awaiting player re-check",
+  "lastPlayerObservation": "The pre-hotfix runtime test created a visible damage node but returned the 950ms impact duration instead of the 1200ms damage-number duration. Fruit visuals also expired before the telegraph phase ended.",
+  "requiredBrowserEvidence": [
+    "event emitted",
+    "damage node created in #battle-damage-layer",
+    "computed browser-visible state after 80ms",
+    "minimum 1200ms normal display duration",
+    "fruit and element visual layers retained through the normal telegraph phase"
+  ],
+  "playerVerified": false,
+  "reason": "This environment cannot navigate the local file application in the browser automation surface. Do not treat source inspection as player verification."
+}

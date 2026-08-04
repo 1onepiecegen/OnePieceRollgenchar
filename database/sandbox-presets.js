@@ -1,0 +1,3 @@
+/* Curated character-copy presets. These create nonstandard Sandbox builds. */
+(function(V4){'use strict';V4.database.sandboxPresets=(V4.database.combatProfiles||[]).map(profile=>{const character=(V4.database.characters||[]).find(item=>item.id===profile.characterId);return {id:`preset-${profile.characterId}`,name:character?.name||profile.name,source:profile.source,combatProfileId:profile.id,characterId:profile.characterId,category:profile.source==='fan'?'OC / Fan':'Canon roster',description:profile.source==='fan'?'User-provided alternate-world OC preset.':'Copies the curated simulator profile into a savable Sandbox character.'};});}(window.OnePieceRollV4));
+

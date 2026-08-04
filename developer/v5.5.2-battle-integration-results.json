@@ -1,0 +1,24 @@
+{
+  "buildId": "v5.5.2-battle-presentation-20260804",
+  "sourceIntegration": {
+    "structuredEvents": true,
+    "realBattlePresenter": true,
+    "stageMovement": true,
+    "announcementBanner": true,
+    "impactFrames": true,
+    "damageFeedback": true,
+    "structuredTurnHistory": true,
+    "replayPresentation": true,
+    "accessibilityFallbacks": true
+  },
+  "frozenRegression": {
+    "generationPulls": 100000,
+    "generationErrors": 0,
+    "secondFruitViolations": 0,
+    "presetConstructions": 10008,
+    "presetErrors": 0,
+    "careerContinuity": 10000,
+    "careerErrors": 0
+  },
+  "browserVisualEvidence": "pending: this execution environment blocks browser navigation to local file URLs"
+}

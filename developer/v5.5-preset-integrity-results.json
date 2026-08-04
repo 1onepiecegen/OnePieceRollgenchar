@@ -1,0 +1,11 @@
+{
+  "buildId": "v5.5.1-release-hardening-20260804",
+  "result": "pass",
+  "templates": 24,
+  "constructions": 10008,
+  "identityDrift": 0,
+  "duplicateFruitErrors": 0,
+  "targetedProfiles": ["Charlotte Katakuri", "Kaido", "Monkey D. Luffy", "Marshall D. Teach", "Goose — The Eclipsed Goddess"],
+  "notes": "Canon templates preserve their authored persona; Goose is explicitly an OC/fan preset."
+}
+

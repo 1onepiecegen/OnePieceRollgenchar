@@ -1,0 +1,9 @@
+(function (V4) {
+  'use strict';
+  const define = (id,name,parentDisciplineIds,requirements,costs,combatTags,advancedFromIds=[]) => ({ id,name,source:'canon',spoilerEra:'late-wano',category:combatTags[0],parentDisciplineIds,requirements,costs,combatTags,unlockRoutes:['training','mentor','battle-insight'],advancedFromIds,description:`A learnable ${name} technique represented by the V5.1 career engine.` });
+  V4.database.techniques = [
+    define('soru','Soru',['rokushiki'],{disciplineMastery:60,speed:60},{stamina:8},['movement','burst-speed']), define('geppo','Geppo',['rokushiki'],{disciplineMastery:65,stamina:60},{stamina:10},['movement','aerial']), define('tekkai','Tekkai',['rokushiki'],{disciplineMastery:60,durability:60},{stamina:8},['defense']), define('shigan','Shigan',['rokushiki'],{disciplineMastery:60,strength:55},{stamina:7},['piercing']), define('rankyaku','Rankyaku',['rokushiki'],{disciplineMastery:65,speed:58},{stamina:9},['ranged-slash']), define('kami-e','Kami-e',['rokushiki'],{disciplineMastery:65,speed:65},{stamina:8},['evasion']),
+    define('life-return','Life Return',['rokushiki'],{disciplineMastery:80,willpower:75},{stamina:14},['recovery','body-control']), define('diable-jambe','Diable Jambe',['black-leg-style'],{disciplineMastery:70,armament:45},{stamina:12},['fire','kick']), define('fish-man-karate-water-shot','Water Shot',['fish-man-karate'],{disciplineMastery:55,strength:50},{stamina:8},['ranged','water']), define('one-sword-draw','One Sword Draw',['one-sword-style'],{disciplineMastery:55,speed:55},{stamina:7},['draw','slash']), define('two-sword-cross','Two Sword Cross',['two-sword-style'],{disciplineMastery:60,coordination:60},{stamina:9},['dual-blade']), define('armament-emission','Armament Emission',['armament-haki'],{armament:75,willpower:65},{stamina:12},['haki','emission'])
+  ];
+}(window.OnePieceRollV4));
+

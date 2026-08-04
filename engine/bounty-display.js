@@ -1,0 +1,4 @@
+/* Display provenance only. The V5.4 bounty calculation remains unchanged. */
+(function(V4){'use strict';const b=V4.engines.bounty;if(!b||b._v55DisplayWrapped)return;const calculate=b.calculate;b.calculate=function(character){const record=calculate(character),reference=character.referenceBounty?.amount||null,modified=!!character.creation?.modifiedFromPreset,override=Number(character.creatorBountyOverride)>0?Number(character.creatorBountyOverride):null;record.simulatorAmount=record.amount;record.referenceAmount=reference;record.creatorOverrideAmount=override;record.displayMode=override?'creator-override':reference&&!modified?'canon-reference':modified?'alternate-build':'generated';record.displayedAmount=override||((reference&&!modified)?reference:record.amount);record.displayedBounty=record.displayedAmount;return record;};b._v55DisplayWrapped=true;
+}(window.OnePieceRollV4));
+

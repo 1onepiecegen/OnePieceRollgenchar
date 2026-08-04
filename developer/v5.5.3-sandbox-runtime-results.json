@@ -1,0 +1,14 @@
+{
+  "buildId": "v5.5.3-runtime-integration-20260804",
+  "test": "releaseHardening.run sandbox DOM navigation test",
+  "implementedContract": {
+    "persistentStepNodes": 8,
+    "navigationId": "sandbox-step-navigation",
+    "selectionPersistence": "fields are moved, never recreated",
+    "createStep": 8,
+    "postCreate": "Sandbox creation switches to the character sheet automatically and retains a return-to-Sandbox route"
+  },
+  "status": "Integrated into runtime; awaiting player re-check",
+  "playerVerified": false,
+  "reason": "The prior blank Step 1 was caused by a retired V5.5 controller hiding labels before re-parenting. The sole Sandbox controller now restores label visibility; a player re-check is still required before marking it player-verified."
+}
