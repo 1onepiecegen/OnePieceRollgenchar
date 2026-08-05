@@ -2152,7 +2152,7 @@ if (c._selfTaught) {
       character.buildId = sandboxHash({ profileId, seed: displaySeed(seed), version: '5.3.0' });
       character.meta = { ...(character.meta || {}), generationMode:'unrestricted-sandbox', baseSeed:displaySeed(seed), buildId:character.buildId, presetProfileId:profileId };
       character.generationProvenance = { seeded:true, manuallyConfigured:true, presetProfileId:profileId, forcedFields:['curated character-copy preset'], automaticallySatisfiedRequirements:['Profile statistics, loadout, and known abilities copied'], bypassedRequirements:[], canonConsistency:character.presetOf.source==='canon'?'curated-simulator-copy':'fan-oc-preset', baseSeed:displaySeed(seed), buildId:character.buildId };
-      if (character.presetOf.characterId === 'goose-eclipsed-goddess') {
+      if (character.presetOf.characterId === 'goddess-eclipsed-goddess') {
         const calculated = character.bounty?.amount || 0;
         character.bounty = { ...character.bounty, amount:0, displayedAmount:0, calculatedAmount:calculated, creatorBountyOverride:0, majorReasons:['Unknown alternate-world anomaly; no public bounty yet.'] };
         character.publicAwareness = { level:'unknown', score:0, multiplier:.2, reasons:['No verified public appearance.'] };
@@ -2324,7 +2324,7 @@ fruitEl.innerHTML = `<div class="stat-group"><h3>Devil Fruit <span class="sub">$
     const discipline = styleById(combatProgression.primaryDisciplineId) || null;
     const secondaryDisciplines = (combatProgression.disciplines || []).filter(entry => entry.id !== combatProgression.primaryDisciplineId).map(entry => styleById(entry.id)).filter(Boolean);
     const techniques = (combatProgression.techniques || []).map(entry => styleById(entry.id)).filter(Boolean);
-    const advancedStateNames = { 'goose-full-alter': 'Full Alter Mode', 'goose-ishtar-pact': 'Ishtar Pact' };
+    const advancedStateNames = { 'goddess-full-alter': 'Full Alter Mode', 'goddess-ishtar-pact': 'Ishtar Pact' };
     const advancedStates = (combatProgression.advancedStates || []).map(entry => styleById(entry.id) || (c.advancedStates || []).find(state => state.id === entry.id) || { id: entry.id, name: advancedStateNames[entry.id] || entry.id, source: c.presetOf?.source || 'expanded' }).filter(Boolean);
     document.getElementById('cs-weapon-style').innerHTML = `
       <div class="stat-group"><h3>Weapon${c.weapon ? ' <span class="sub">' + c.weapon.grade + ' Grade</span>' + sourceBadge(c.weapon) : ''}</h3>
