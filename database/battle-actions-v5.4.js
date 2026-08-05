@@ -10,7 +10,7 @@
     ['combat-kaido-late-wano','Thunder Bagua','weapon','heavy',['physical','haki'],'canon'],['combat-kaido-late-wano','Blast Breath','fruit','finisher',['fire'],'canon'],
     ['combat-sakazuki-late-wano','Meigo','fruit','finisher',['magma'],'canon'],['combat-kuzan-late-wano','Ice Time','fruit','heavy',['ice'],'canon'],
     ['combat-borsalino-late-wano','Yasakani no Magatama','fruit','heavy',['light'],'canon'],['combat-marshall-d-teach-late-wano','Black Vortex','fruit','heavy',['darkness'],'canon'],
-    ['combat-goose-eclipsed-goddess','Fallen Venus Armament','fruit','heavy',['gravity','cosmic'],'fan'],['combat-goose-eclipsed-goddess','Abyssal Singularity','fruit','catastrophic',['gravity','darkness','cosmic'],'fan']
+    ['combat-goddess-eclipsed-goddess','Fallen Venus Armament','fruit','heavy',['gravity','cosmic'],'fan'],['combat-goddess-eclipsed-goddess','Abyssal Singularity','fruit','catastrophic',['gravity','darkness','cosmic'],'fan']
   ].map(([ownerProfileId,name,category,scale,elementTags,source], index) => ({id:`battle-action-${index+1}`,ownerProfileIds:[ownerProfileId],name,category,scale,staminaCost:{standard:10,heavy:15,finisher:22,catastrophic:30}[scale] || 8,powerCoefficient:{standard:1,heavy:1.18,finisher:1.38,catastrophic:1.58}[scale] || 1,accuracyModifier:scale==='catastrophic'?-0.08:scale==='finisher'?-0.03:.03,elementTags,statusEffects:[],cooldown:scale==='catastrophic'?4:scale==='finisher'?3:scale==='heavy'?1:0,prerequisites:{},animationProfile:scale,description:`${name} is a reviewed ${source === 'canon' ? 'canon-named' : 'original OC'} battle presentation option.`,source}));
   V4.database.battleActions = actions;
 }(window.OnePieceRollV4));
